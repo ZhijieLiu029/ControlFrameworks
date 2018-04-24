@@ -6,8 +6,10 @@
  * be ran less than 50 days.
  * 
  */
+#include "plant.h"
+ 
 
-#define TC 200             //控制周期(ms)
+#define TC 200             //控制程序运行周期(ms)
 //#define LED 13             //Led pin number
 
 
@@ -28,7 +30,7 @@ void setup() {
    *  After initialization, make sure every actuator is in an safe state.
    *  
    */
- 
+  pinMode(LED_BUILTIN, OUTPUT);
   
   // initialize sensors
   
@@ -45,7 +47,7 @@ void loop() {
 
 
   // control calculate
-  pinMode(LED_BUILTIN, OUTPUT);
+ 
 
 
   // control output
