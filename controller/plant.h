@@ -1,6 +1,6 @@
 #ifndef plant_h
-  #define plant_h
-#endif
+#define plant_h
+
 
 class PlantClass{
   /* public variables and functions */
@@ -10,11 +10,11 @@ class PlantClass{
 
     
     // init the plant object
-    bool Init();
+    bool Init(void);
     
     // refresh sensors
-    UpdateSensor();
-    AdjustPlant();
+    void UpdateSensors(void);
+    bool AdjustPlant(void);
 
     
     
@@ -24,3 +24,4 @@ class PlantClass{
     
 };
 
+#endif /* plant.h */
